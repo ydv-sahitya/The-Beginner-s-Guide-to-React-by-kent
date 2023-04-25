@@ -1,0 +1,68 @@
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+ <!-- from this script I am using babel to run react.  -->
+  <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+
+
+    <script type="text/babel"> 
+    // Here I am using React 
+
+
+        
+        const rootElement = document.getElementById('root')
+        const children = 'hello world using props'
+        const className = 'container'
+        const props = {children, className}
+
+
+        // const element = <div {...props} />
+
+
+        // const rootElement = document.getElementById('root')
+        // // const myChildren = 'hello world in wrap'
+        // const myClassName = 'container'
+        // const element = ( <div classname={myClassName}>
+        //         <span>Hello <strong> World</strong></span>
+        //         </div>)
+           
+
+
+        // using Fragment. 
+    const element = (
+        <React.Fragment>
+        <span>Hello</span> <span>World here</span>
+        </React.Fragment>
+    )
+
+
+        // const element = <div className={myClassName} > {myChildren}</div>
+        ReactDOM.render(element, document.getElementById('root'))
+
+
+        // const element = React.createElement('div', {
+        //     children: 'hello world react',
+        //     className: 'container',
+        // })
+        
+
+        // I am using babel to run React syntex. 
+        
+
+
+
+    // here using pure vanlia js
+
+        // const element = document.createElement('div')
+        // element.textContent = 'hello world sahi'
+        // element.className = 'container'
+        // rootElement.appendChild(element)
+
+
+    </script>
+</body>
+
+
+
